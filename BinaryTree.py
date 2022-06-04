@@ -1,7 +1,6 @@
 # Jean-Marc Romain
 # 06-04-2022
-
-import QueueLinkedList as queue
+from QueueLinkedList import*
 
 class TreeNode:
     # two parameter to create the tree structure
