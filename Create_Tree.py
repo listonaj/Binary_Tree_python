@@ -16,6 +16,6 @@ class Tree_Node:
         return ret
     
     # method to add a node in the tree
-    def add_node(self, TreeNode):
+    def add_child(self, TreeNode):
         self.childnodelist.append(TreeNode)
 
