@@ -1,0 +1,16 @@
+from Create_Tree import*
+
+tree = Tree_Node('Drinks', [])
+cold = Tree_Node('Cold', [])
+hot = Tree_Node('Hot', [])
+tree.add_node(cold)
+tree.add_node(hot)
+tea = Tree_Node('Tea', [])
+coffee = Tree_Node('Coffee', [])
+cola = Tree_Node('Cola', [])
+fanta = Tree_Node('Fanta', [])
+cold.add_node(cola)
+cold.add_node(fanta)
+hot.add_node(tea)
+hot.add_node(coffee)
+print(tree)

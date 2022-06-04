@@ -3,30 +3,19 @@
 # basic tree creation follow the drinks tree example from pdf 'trees generalities' 
 
 class Tree_Node:
-    def __init__(self, data, children = []):
+    # constructor contains data and a link to its children node(list)
+    def __init__(self, data, childnodelist = []):
         self.data = data
-        self.children = children
+        self.childnodelist = childnodelist
     
+    # added a build in function thaty will print the tree as appearing
     def __str__(self, level=0):
         ret = "  " * level + str(self.data)  + "\n"
-        for child in self.children:
+        for child in self.childnodelist:
             ret += child.__str__(level + 1)
         return ret
     
-    def add_Child(self, TreeNode):
-        self.children.append(TreeNode)
+    # method to add a node in the tree
+    def add_node(self, TreeNode):
+        self.childnodelist.append(TreeNode)
 
-tree = Tree_Node('Drinks', [])
-cold = Tree_Node('Cold', [])
-hot = Tree_Node('Hot', [])
-tree.add_Child(cold)
-tree.add_Child(hot)
-tea = Tree_Node('Tea', [])
-coffee = Tree_Node('Coffee', [])
-cola = Tree_Node('Cola', [])
-fanta = Tree_Node('Fanta', [])
-cold.add_Child(cola)
-cold.add_Child(fanta)
-hot.add_Child(tea)
-hot.add_Child(coffee)
-print(tree)
