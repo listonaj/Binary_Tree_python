@@ -17,10 +17,12 @@ class BinaryTree:
         return "The value has been successfully inserted"
 
     def searchNode(self, nodeValue):
+        # traverse the list 
         for i in range(len(self.customList)):
+            #compare each element with element we are looking for
             if self.customList[i] == nodeValue:
-                return "Success"
-        return "Not found"
+                return "Good news! the node you are looking for have been found"
+        return "The value has not been found, sorry!"
     
     def preOrderTraversal(self, index):
         if index > self.lastUsedIndex:
