@@ -89,7 +89,7 @@ def insertNodeBT(rootNode, newNode):
                 customQueue.enqueue(root.value.rightChild)
             else:
                 root.value.rightChild = newNode
-                return f"the has successfully been inserted in the binary tree"
+                return f"the {newNode} has successfully been inserted in the binary tree"
 
 def getDeepestNode(rootNode):
     if not rootNode:

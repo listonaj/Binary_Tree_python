@@ -60,16 +60,7 @@ class BinaryTree:
     
  
 
-newBT = BinaryTree(8)
-newBT.insertNode("Drinks")
-newBT.insertNode("Hot")
-newBT.insertNode("Cold")
-newBT.insertNode("Tea")
-newBT.insertNode("Coffee")
 
-print(newBT.deleteBT())
-
-newBT.levelOrderTraversal(1)
 
 
 
