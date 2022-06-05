@@ -69,9 +69,12 @@ def searchBT(rootNode, nodeValue):
                 customQueue.enqueue(root.value.rightChild)
         return f"the node '{nodeValue}' hasn't been found in the binary tree"
 
+# two parameter - root node and node to insert in the tree
 def insertNodeBT(rootNode, newNode):
+    # if no root node, we create one 
     if not rootNode:
         rootNode = newNode
+    # we traverse the tree to find the right spot
     else:
         customQueue = queue.Queue()
         customQueue.enqueue(rootNode)
@@ -81,12 +84,12 @@ def insertNodeBT(rootNode, newNode):
                 customQueue.enqueue(root.value.leftChild)
             else:
                 root.value.leftChild = newNode
-                return "Successfully Inserted"
+                return "the node has successfully been inserted in the binary tree"
             if root.value.rightChild is not None:
                 customQueue.enqueue(root.value.rightChild)
             else:
                 root.value.rightChild = newNode
-                return "Successfully Inserted"
+                return f"the has successfully been inserted in the binary tree"
 
 def getDeepestNode(rootNode):
     if not rootNode:

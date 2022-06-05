@@ -37,3 +37,12 @@ print("\nTesting the searchBT() method")
 print(searchBT(mybintree, "Tea"))
 print(searchBT(mybintree,"Dr Pepper"))
 
+#test the insert method
+print("\ntrying to insert the node 'Dr pepper in the tree")
+# create a new node to insert in the tree
+newNode = TreeNode("Dr Pepper")
+print(insertNodeBT(mybintree, newNode))
+# check if the node has been inserted by printing the tree
+preOrderTraversal(mybintree)
+
+
