@@ -8,9 +8,11 @@ class BinaryTree:
         self.maxSize = size
     
     def insertNode(self, value):
+        #case where we are at the end of the list
         if self.lastUsedIndex + 1 == self.maxSize:
             return "The Binary Tree is full"
-        self.customList[self.lastUsedIndex+1] = value
+        self.customList[self.lastUsedIndex+1] = value 
+        #every time we insert we increase the last used index by 1
         self.lastUsedIndex += 1
         return "The value has been successfully inserted"
 
