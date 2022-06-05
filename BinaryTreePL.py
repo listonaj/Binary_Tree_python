@@ -1,7 +1,9 @@
 
 class BinaryTree:
     def __init__(self, size):
+        # we fix the size of the list at the creation 
         self.customList = size * [None]
+        # we reference the last used index set to zero as we skip the first index
         self.lastUsedIndex = 0
         self.maxSize = size
     
