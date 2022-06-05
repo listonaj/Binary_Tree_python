@@ -1,6 +1,3 @@
-#   Created by Elshad Karimov on 30/05/2020.
-#   Copyright © 2020 AppMillers. All rights reserved.
-
 
 class Node:
     def __init__(self, value=None):
@@ -15,8 +12,6 @@ class LinkedList:
         self.head = None
         self.tail = None
     
-    
-
 class Queue:
     def __init__(self):
         self.linkedList = LinkedList()
@@ -61,8 +56,6 @@ class Queue:
     def delete(self):
         self.linkedList.head = None
         self.linkedList.tail = None
-
-
 
 
 # custQueue = Queue()
