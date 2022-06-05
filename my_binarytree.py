@@ -31,3 +31,9 @@ postOrderTraversal(mybintree)
 #test the levelorder traversal
 print("\ntesting the level order traversal algorithm")
 levelOrderTraversal(mybintree)
+
+#test the seach method
+print("\nTesting the searchBT() method")
+print(searchBT(mybintree, "Tea"))
+print(searchBT(mybintree,"Dr Pepper"))
+
