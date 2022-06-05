@@ -1,6 +1,6 @@
 # Jean-Marc Romain
 # 06-04-2022
-from QueueLinkedList import*
+import QueueLinkedList as queue
 
 class TreeNode:
     # two parameter to create the tree structure
@@ -34,14 +34,19 @@ def levelOrderTraversal(rootNode):
     if not rootNode:
         return
     else:
+        # create a custom queue helper
         customQueue = queue.Queue()
+        # insert the node into the queue
         customQueue.enqueue(rootNode)
+        # while the queue is not empty
         while not(customQueue.isEmpty()):
+            # the dequeue() method print the first node in the queue
             root = customQueue.dequeue()
             print(root.value.data)
+            #if there is no left child we stop here, overwise we add the left child
             if (root.value.leftChild is not None):
                 customQueue.enqueue(root.value.leftChild)
-            
+            #if there is a right child
             if (root.value.rightChild is not None):
                 customQueue.enqueue(root.value.rightChild)
 

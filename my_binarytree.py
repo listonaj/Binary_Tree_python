@@ -16,10 +16,18 @@ coffee = TreeNode("Coffee")
 leftChild.leftChild = tea
 leftChild.rightChild = coffee
 
-#test the preorder traversal method
+# test the preorder traversal method
 print("\ntetsting the preorder traversal algorithm")
 preOrderTraversal(mybintree)
 
-#test inorder traversal
+# test inorder traversal
 print("\ntesting the indorder traversal algorithm")
 inOrderTraversal(mybintree)
+
+#test postorder traversal
+print("\ntesting the postorder traversal algorithm")
+postOrderTraversal(mybintree)
+
+#test the levelorder traversal
+print("\ntesting the level order traversal algorithm")
+levelOrderTraversal(mybintree)
